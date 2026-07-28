@@ -5,9 +5,9 @@ import "dotenv/config";
 export default defineConfig({
   plugins: [hardhatToolboxViemPlugin],
   solidity: {
-    version: "0.8.28",
+    version: "0.8.31",
     settings: {
-      evmVersion: "prague",
+      evmVersion: "osaka",
       optimizer: {
         enabled: true,
         runs: 200,
