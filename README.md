@@ -2,7 +2,7 @@
 
 This project showcases a Hardhat3 project using the native Node.js test runner (`node:test`) and the `viem` library for Monad Testnet interactions.
 
-To learn more about Hardhat3, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat3](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+To learn more about Hardhat3, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). For support, see Hardhat's current [Getting help guide](https://hardhat.org/docs/guides/getting-help), or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) to report a bug.
 
 ## Project Overview
 
