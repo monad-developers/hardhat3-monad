@@ -1,10 +1,6 @@
 import hardhatToolboxViemPlugin from "@nomicfoundation/hardhat-toolbox-viem";
-import { defineConfig } from "hardhat/config";
+import { configVariable, defineConfig } from "hardhat/config";
 import "dotenv/config";
-
-const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
-const accounts = PRIVATE_KEY === "" ? [] : [PRIVATE_KEY];
 
 export default defineConfig({
   plugins: [hardhatToolboxViemPlugin],
@@ -25,13 +21,13 @@ export default defineConfig({
     monadTestnet: {
       type: "http",
       url: "https://testnet-rpc.monad.xyz",
-      accounts,
+      accounts: [configVariable("PRIVATE_KEY")],
       chainId: 10143,
     },
     monadMainnet: {
       type: "http",
       url: "https://rpc.monad.xyz",
-      accounts,
+      accounts: [configVariable("PRIVATE_KEY")],
       chainId: 143,
     },
   },
@@ -41,7 +37,7 @@ export default defineConfig({
     },
     etherscan: {
       enabled: true,
-      apiKey: ETHERSCAN_API_KEY,
+      apiKey: configVariable("ETHERSCAN_API_KEY"),
     },
     sourcify: {
       enabled: true,
