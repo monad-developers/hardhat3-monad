@@ -45,6 +45,16 @@ export default defineConfig({
     },
   },
   chainDescriptors: {
+    10143: {
+      name: "MonadTestnet",
+      blockExplorers: {
+        etherscan: {
+          name: "Monadscan",
+          url: "https://testnet.monadscan.com",
+          apiUrl: "https://api.etherscan.io/v2/api",
+        },
+      },
+    },
     143: {
       name: "MonadMainnet",
       blockExplorers: {
