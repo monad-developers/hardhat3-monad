@@ -18,6 +18,10 @@ export default defineConfig({
     hardhat: {
       type: "edr-simulated",
     },
+    anvil: {
+      type: "http",
+      url: "http://127.0.0.1:8545",
+    },
     monadTestnet: {
       type: "http",
       url: "https://testnet-rpc.monad.xyz",
